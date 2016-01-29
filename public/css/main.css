@@ -1,0 +1,11 @@
+
+.content_div.ng-enter {
+    -webkit-animation: bounce 1s;
+    -moz-animation: bounce 1s;
+    -ms-animation: bounce 1s;
+    animation: bounce 1s;
+    opacity:0;
+}
+.content_div.ng-enter-active {
+    opacity:1;
+}

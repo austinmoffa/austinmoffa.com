@@ -1,0 +1,55 @@
+<!-- public/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<base href="/">
+
+<title>Austin Moffa's Page</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="libs/angular-material/angular-material.min.css">
+<link rel="stylesheet" href="css/main.css">
+<!-- JS -->
+<script src="libs/angular/angular.js"></script>
+<script src="libs/angular-animate/angular-animate.js"></script>
+<script src="libs/angular-material/angular-material.js"></script>
+<script src="libs/angular-aria/angular-aria.js"></script>
+<script src="libs/angular-messages/angular-messages.js"></script>
+<script src="libs/angular-route/angular-route.min.js"></script>
+
+<!-- ANGULAR CUSTOM -->
+<script src="app/js/controllers/MainCtrl.js"></script>
+<script src="app/js/controllers/BlogCtrl.js"></script>
+<script src="app/js/controllers/BlogPostCtrl.js"></script>
+<script src="app/js/services/BlogService.js"></script>
+<script src="app/js/appRoutes.js"></script>
+<script src="app/js/app.js"></script>
+</head>
+<body ng-app="mainApp" ng-controller="MainController" layout='column'>
+<md-toolbar class='md-whiteframe-z1' >
+<div class="md-toolbar-tools">
+
+<md-button class="md-icon-button" aria-label="Menu" ng-click='openNav()'>
+<md-icon md-svg-icon="images/menu.svg" ></md-icon>
+</md-button>
+<a href='/'><img src='images/logo.svg'></a>
+<h2 style='color:white'>Austin Moffa</h2>
+</div>
+</md-toolbar>
+<div flex layout="row">
+    <div ng-include="main_nav"></div>
+
+    <!-- ANGULAR DYNAMIC CONTENT -->
+    <md-content flex ng-view class='content_div'></md-content>
+
+</div>
+
+
+
+<div layout='row' layout-align='center center' style='font-size:50%'>
+No content on this site is endorsed or likely even approved of by anyone who has ever been even vaguely associated with me.
+</div>
+</body>
+</html>
+
