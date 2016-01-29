@@ -12,7 +12,7 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
     .when('/blog/:id', {
         templateUrl: 'app/templates/blog_post.html',
         controller: 'BlogPostController'
-    });
+    })
     .when('/story', {
         templateUrl: 'app/templates/story.html',
         controller: 'StoryController'

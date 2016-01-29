@@ -9,3 +9,6 @@
 .content_div.ng-enter-active {
     opacity:1;
 }
+.content_wrapper{
+    max-width:900px;
+}
