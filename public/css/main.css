@@ -10,5 +10,12 @@
     opacity:1;
 }
 .content_wrapper{
-    max-width:900px;
+    max-width:80%
+}
+.md-button{
+    font-size:150%;
+}
+.menu-icon {
+    width:60px;
+    height:60px;
 }
