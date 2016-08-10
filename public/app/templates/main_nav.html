@@ -1,12 +1,29 @@
-<md-sidenav layout='column' md-component-id='main_nav' class='md-whiteframe-z2'>
-    <!-- LINK TO OUR PAGES. ANGULAR HANDLES THE ROUTING HERE -->
-    <md-button ng-href='/'>Home</md-button>
-    <md-button ng-href='/blog'>Essays</md-button>
-    <div layout='row' layout-align='center center'>
-        <a href="https://www.linkedin.com/pub/austin-moffa/101/518/704" target='_blank' style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="images/linkedin.png" width="32" height="32" alt="View Austin Moffa's LinkedIn profile" style="vertical-align:middle;" border="0"></span></a>
-        <a href="https://github.com/austinmoffa" target='_blank'><img src="images/gh.png" width="32" height="32" alt="View Austin Moffa's github profile" style="vertical-align:middle;" border="0"></span></a>
-    <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Faustin-moffa&color=orange_white&size=32" style="width: 32px; height: 32px;"></iframe>
+<nav class="navbar navbar-default">
+  <div class="container-fluid" ng-controller="NavController as vm">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" ng-click="vm.toggleCollapse()">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="home">
+        <div class='brand-image' brand-image></div brand-image>
+    </a>
     </div>
-</md-sidenav>
 
-
+    <!-- Collect the nav links, forms, and other content for toggling -->
+<div class="navbar-collapse" style="overflow:hidden!important;" uib-collapse="vm.isCollapsed">
+      <ul class="nav navbar-nav">
+        <li ui-sref-active='active'><a ui-sref="blog">BLOG</a></li>
+        <li ui-sref-active='active'><a ui-sref="music">MUSIC</a></li>
+        <li ui-sref-active='active'><a ui-sref="prof">WORK</a></li>
+      </ul>
+        
+    <ul class="nav navbar-nav navbar-right">
+        <li class='pretty-button'><a  class='pretty-button' href="index_secret.html">MODERN THEME</a></li>
+    </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

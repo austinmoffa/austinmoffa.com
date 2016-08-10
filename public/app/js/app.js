@@ -1,25 +1,30 @@
-angular.module('mainApp', ['ngRoute', 'ngMaterial', 'appRoutes', 'MainCtrl', 'BlogCtrl', 'BlogPostCtrl'])
-.config(function($mdThemingProvider) {
-    $mdThemingProvider.theme('default')
-        .primaryPalette('grey')
-})
-.run(['$rootScope', '$route', function($rootScope, $route) {
-    $rootScope.$on('$routeChangeSuccess', function() {
+(function() {
+angular.module('app', ['ui.router', 'app.routes', 'ngTouch', 'ui.bootstrap', 'NavCtrl', 'BlogCtrl', 'BrandImage'])
+.run(['$rootScope', function($rootScope) {
+    $rootScope.$on('$stateChangeSuccess', function() {
         var titles = [
-            'I am not the Walrus',
+            'Mistakes Were Made...',
+            'Robust and Aromatic',
+            'The Savannah Campaign of Websites',
+            'Badical!',
+            'If Selected I Will Not Load, If Loaded I will Not Please',
+            'Wan Trepanner - NOT Wantrepreneur',
             'Worst thing Since Waterworld',
-            'Surplus Robot Limbs',
-            'My Mom Likes My Site',
-            'Crunchy',
+            'Discount Robot Limbs',
+            'Voted Best Site by Austin\'s Mom',
+            'Soft - Especially in Milk',
             'All Content Ethically Sourced',
-            'Flatland 2: Earth',
             'Schopenhauer\'s Dream Book',  
             'Deep Couch City',
+            'Academic Rigor, Youthful Vigor',
+            'Be Mindful of Spacing When Writing "Best In Breed"'
         ];
 
         var title = titles[Math.floor(Math.random()*titles.length)];
 
         document.title = title;
     });
-}]);
+    }]);
+})();
+
 

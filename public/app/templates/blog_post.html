@@ -1,11 +1,5 @@
-<div layout="column" class='flex' layout-align="center center">
-<div class='content_wrapper'>
-<p ng-include="post"></p>
-<br>
-</div>
-</div>
-<div class='content_wrapper' layout="column" layout-align="center center">
-<div class='content_wrapper'>
-<a href='/blog'>back</a>
-</div>
+<div class='template_wrapper'>
+    <ng-include src="vm.post"></ng-include>
+    <br>
+    <a class='fa' ui-sref='blog.index'><i class="fa fa-backward fa-3x" aria-hidden="true"></i></a>
 </div>

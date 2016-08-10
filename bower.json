@@ -1,14 +1,16 @@
 {
-    "name": "austin-angular",
-    "version": "0.1",
-    "dependencies": {
-        "bootstrap": "latest",
-        "font-awesome": "latest",
-        "animate.css": "latest",
-        "angular": "latest",
-        "angular-route": "latest",
-        "angular-animate": "latest",
-        "angular-material": "latest"
-    }
+  "name": "austin-angular",
+  "version": "0.1",
+  "dependencies": {
+    "bootstrap": "latest",
+    "font-awesome": "latest",
+    "animate.css": "latest",
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-animate": "latest",
+    "angular-material": "latest",
+    "angular-touch": "^1.5.8",
+    "angular-bootstrap": "^2.0.1",
+    "angular-ui-router": "^0.3.1"
+  }
 }
-
