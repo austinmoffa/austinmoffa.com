@@ -31,7 +31,7 @@ img[src$=".gif"], img[src$=".png"] {
 br {
             display: block;
             content: "";
-            margin-top: 40px;
+            margin-top: 20px;
 }
 h1{
     font-family:'start';
@@ -109,8 +109,8 @@ font-smooth: never;
     border:none;
     height:72px;
     margin-top:12px;
-        outline: 2px dashed white;
-        box-shadow: 0 0 0 2px gray;
+    outline: 2px dashed white;
+    box-shadow: 0 0 0 2px gray;
     animation: border-active 1s infinite;
 }
 
@@ -128,6 +128,8 @@ font-smooth: never;
     font-size:24px;
     position: absolute;
     color:white;
+    width:100%;
+    text-align:center;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -137,6 +139,12 @@ font-smooth: never;
     border-radius:0px;
     border:none;
     box-shadow: 2px 2px 5px gray;
+}
+a {
+    color:white;
+}
+a:hover{
+    color:#3071FF;
 }
 
 a.fa {
@@ -162,4 +170,14 @@ a.fa:hover{
     text-align:center;
     border-radius:50px;
     float:right;
+    text-align:center;
+}
+
+.navbar-default .navbar-nav > li > a.pretty-button {
+    width:76px;
+}
+
+.container{
+    padding-top:10px;
+    padding-bottom:10px;
 }

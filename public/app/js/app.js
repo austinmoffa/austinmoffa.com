@@ -5,7 +5,7 @@ angular.module('app', ['ui.router', 'app.routes', 'ngTouch', 'ui.bootstrap', 'Na
         var titles = [
             'Mistakes Were Made...',
             'Robust and Aromatic',
-            'The Savannah Campaign of Websites',
+            'If the Savannah Campaign was a website...',
             'Badical!',
             'If Selected I Will Not Load, If Loaded I will Not Please',
             'Wan Trepanner - NOT Wantrepreneur',
